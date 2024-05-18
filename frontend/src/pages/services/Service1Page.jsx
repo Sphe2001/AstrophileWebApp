@@ -5,6 +5,8 @@ import axios from 'axios';
 const Service1Page = () => {
     const [formData, setFormData] = useState({
         phoneNumber: '',
+        firstName: '',
+        lastName: ''
       });
      
       const navigate = useNavigate();
@@ -112,6 +114,26 @@ const Service1Page = () => {
                     Book your <b>appointment</b> with us today and discover a new level of vitality and wellness at Astrophile Nova!
                 </p>
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+                <label htmlFor="firstName" className="sr-only">First Name</label>
+                <input
+                        name="firstName"
+                        type="text"
+                        required
+                        className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                        placeholder="First Name"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="lastName" className="sr-only">Last Name</label>
+                     <input
+                        name="lastName"
+                        type="text"
+                        required
+                        className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                        placeholder="Last Name"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                    />
                     <label htmlFor="phoneNumber" className="sr-only">Phone Number</label>
                     <input
                         name="phoneNumber"
@@ -119,7 +141,7 @@ const Service1Page = () => {
                         required
                         className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                         placeholder="Phone Number"
-                        value={formData.email}
+                        value={formData.phoneNumber}
                         onChange={handleChange}
                     />
                     <button type="submit" className="group relative flex w-full justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Book Now</button>

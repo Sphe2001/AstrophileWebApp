@@ -5,6 +5,8 @@ import axios from 'axios';
 const Service3Page = () => {
     const [formData, setFormData] = useState({
         phoneNumber: '',
+        firstName: '',
+        lastName: ''
       });
      
       const navigate = useNavigate();
@@ -112,6 +114,26 @@ const Service3Page = () => {
                 Schedule your appointment with us today and embark on a journey to radiant, luminous skin at Astrophile Nova!
                 </p>
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+                <label htmlFor="firstName" className="sr-only">First Name</label>
+                <input
+                        name="firstName"
+                        type="text"
+                        required
+                        className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                        placeholder="First Name"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="lastName" className="sr-only">Last Name</label>
+                     <input
+                        name="lastName"
+                        type="text"
+                        required
+                        className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                        placeholder="Last Name"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                    />
                     <label htmlFor="phoneNumber" className="sr-only">Phone Number</label>
                     <input
                         name="phoneNumber"

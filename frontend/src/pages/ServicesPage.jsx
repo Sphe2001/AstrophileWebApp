@@ -23,8 +23,9 @@ const ServicesPage = () => {
     fetchData();
   }, []);
     return(
-        <div className="font-sans bg-gray-100 min-h-screen">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="font-sans bg-white min-h-screen">
+          
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 mb-5">
                 
                 <div className="grid gap-8 lg:grid-cols-3">
                     {services.map(ser => (
@@ -34,7 +35,11 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </div>
-            
+            <footer className="bg-white shadow-md py-6">
+                    <div className="container mx-auto px-6 text-center text-gray-600">
+                        &copy; 2024 Astrophile Nova. All rights reserved.
+                    </div>
+                </footer>
         </div>
     );
 };

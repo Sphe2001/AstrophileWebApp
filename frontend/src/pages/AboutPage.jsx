@@ -20,29 +20,28 @@ const AboutPage = () => {
     }, []);
     return(
             <div>
-                <div className="hero w-full min-h-[40vh] bg-cover bg-center flex items-center justify-end text-antiquewhite" style={{backgroundImage: "linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url('https://k-beautyfactory.com/wp-content/uploads/2022/11/algae_peel_training_640_square-min.jpg')"}}>
-                    
-                </div>
 
                 <div className="benefit-text text-center max-w-2xl mx-auto py-5">
-                    <h2 className="text-2xl font-semibold mb-2">About Us</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
                     <p className="mb-4">
                         Healthy aging and looking young on the outside begins on the inside! For even the most delicate skin, we supply you organic beauty products and natural and organic skin care solutions that actually show results.
                         Our company's goal is to offer an honest approach to beauty, and we take great pride in that. We employ safe and efficient skin care chemicals that enhance your skin's natural biology to deliver long-lasting, clinically proven benefits.
                     </p>
                     
-                    <h2 className="text-2xl font-semibold mb-2">What Can It Do For You?</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">What Can It Do For You?</h2>
                     <div className="benefit-text mb-4">
-                        Increased cell renewal<br/>
-                        Intense exfoliation<br/>
-                        Reduction and elimination of hyper pigmentation and spots.<br/>
-                        Tightens pores and reduces acne<br/>
-                        Boosts skin radiance, unifies and matifies the complexion.<br/>
-                        Reduces dark circles under the eyes.<br/>
-                        Improves sun damaged skin by reducing wrinkles and improves the appearance of sagging skin.<br/>
-                        Improves blood circulation.<br/>
-                        Increased cell renewal<br/>
-                        Smooths the skin.<br/>
+                        <p>
+                        Increased cell renewal, 
+                        Intense exfoliation, 
+                        Reduction and elimination of hyper pigmentation and spots, 
+                        Tightens pores and reduces acne, 
+                        Boosts skin radiance, unifies and matifies the complexion, 
+                        Reduces dark circles under the eyes, 
+                        Improves sun damaged skin by reducing wrinkles and improves the appearance of sagging skin, 
+                        Improves blood circulation, 
+                        Increased cell renewal, 
+                        Smooths the skin, 
+                        </p>
                     </div>
                 </div>
 

@@ -28,7 +28,9 @@ const LoginPage = () => {
       };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100"
+    style={{background: 'linear-gradient(135deg, #efdecd 0%, #fff 100%)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
         <h2 className="text-3xl font-extrabold text-center text-gray-900">Login</h2>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
