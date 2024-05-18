@@ -19,6 +19,10 @@ export const Navbar = () => {
                 <Link className="no-underline text-inherit" to="/services">Services</Link>
                 {menu==="services"?<hr className="border-none w-4/5 h-0.5 rounded bg-red-500"/>:<></>}
                 </li>
+                <li className="flex flex-col items-center gap-0.5 cursor-pointer" onClick={()=>{setMenu("about")}}>
+                <Link className="no-underline text-inherit" to="/about">About</Link>
+                {menu==="about"?<hr className="border-none w-4/5 h-0.5 rounded bg-red-500"/>:<></>}
+                </li>
 
             </ul>
             <div className="flex items-center gap-11">

@@ -34,6 +34,7 @@ const ServicesPage = () => {
                     ))}
                 </div>
             </div>
+            
         </div>
     );
 };

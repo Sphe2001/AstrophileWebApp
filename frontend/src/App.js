@@ -14,6 +14,7 @@ import ServicesPage from './pages/ServicesPage';
 import Service1Page from './pages/services/Service1Page';
 import Service3Page from './pages/services/Service3Page';
 import Service2Page from './pages/services/Service2Page';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/IVService" element={<Service1Page />} />
           <Route path="/AlgaeService" element={<Service3Page />} />
           <Route path="/SkinTagService" element={<Service2Page />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
     </div>
