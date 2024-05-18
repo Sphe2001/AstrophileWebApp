@@ -8,9 +8,9 @@ import image4 from '../componets/images/image4.jpg'
 const HomePage = () => {
     
     return(
-        <div className="bg-gray-50">
+        <div className="bg-gray-100">
   
-        <main className="container mx-auto px-6 py-12">
+        <main className="container mx-auto px-6 py-12 mt-1">
           <section className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome to Our Beauty Clinic</h1>
           </section>

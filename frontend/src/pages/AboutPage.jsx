@@ -19,9 +19,9 @@ const AboutPage = () => {
         return () => clearInterval(interval);
     }, []);
     return(
-            <div>
+            <div className="bg-gray-100">
 
-                <div className="benefit-text text-center max-w-2xl mx-auto py-5">
+                <div className="benefit-text text-center max-w-2xl mx-auto py-5 mt-1">
                     <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
                     <p className="mb-4">
                         Healthy aging and looking young on the outside begins on the inside! For even the most delicate skin, we supply you organic beauty products and natural and organic skin care solutions that actually show results.

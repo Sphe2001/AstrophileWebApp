@@ -6,7 +6,7 @@ export const Navbar = () => {
     const [menu, setMenu] = useState("")
   return (
             <div className='flex justify-around p-4 shadow-md'
-            style={{background: 'linear-gradient(135deg, #efdecd 0%, #fff 100%)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            // style={{background: 'linear-gradient(135deg, #efdecd 0%, #fff 100%)', backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
             <div className='flex items-center gap-2.5'>
                 <img src={logo} alt='website logo' width={70} height={70}/>
